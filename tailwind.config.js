@@ -9,8 +9,7 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        // right: "20px 0 60px -15px rgba(0, 0, 0, 0.3)",
-        cartButton: "hsl(26, 100%, 55%,0.4) 0px 15px 50px 0px;",
+        "letter-case": "0px 0px 14px #ffffffaa",
       },
       gridTemplateColumns: {
         quantityButton: "1fr 1fr 1fr",
