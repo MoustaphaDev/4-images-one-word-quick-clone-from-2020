@@ -1,12 +1,10 @@
-interface ImageGuessProps {
-  image: string;
-  alt: string;
-}
+import useSolutionContext from "../../Hooks/useSolutionContext";
 
-const ImageGuess = ({ image, alt }: ImageGuessProps) => {
+const ImageGuess = () => {
+  const level = useSolutionContext();
   return (
     <div className="mx-auto w-full">
-      <img src={image} alt={alt} className="mx-auto w-full object-cover" />
+      <img src={level.image} className="mx-auto w-full object-cover" />
     </div>
   );
 };
